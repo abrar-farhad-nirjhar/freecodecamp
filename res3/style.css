@@ -1,7 +1,7 @@
 body{
     background-color: #eee;
     margin: 0px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 #header{
@@ -21,9 +21,15 @@ body{
     font-size: 20px;
     display: flex;
     justify-content: space-between;
+    margin-top: 2px;
 }
 
 .nav-link{
     cursor: pointer;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
 }
 
