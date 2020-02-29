@@ -33,3 +33,26 @@ a:visited{
     color: black;
 }
 
+#features{
+    width: 75%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feature-icon{
+    width: 20%;
+
+}
+.feature-body{
+
+    width: 70%;
+
+}
+.feature-heading{
+
+}
+.feature-description{
+
+}
