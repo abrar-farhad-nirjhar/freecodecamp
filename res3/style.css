@@ -1,0 +1,29 @@
+body{
+    background-color: #eee;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#header{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+#left{
+    width: 20%;
+}
+#nav-bar{
+    width: 35%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
