@@ -15,29 +15,90 @@
 
     <div id="form-container">
         <form id="survey-form">
-            <label for="name">
+            <label for="name" id="name-label">
                 Name:
             </label>
             <br>
-            
+
             <input type="text" name="name" class="text-input" id="name" placeholder="Enter your name" required>
             <br>
             <br>
-            <label for="email">
+            <label for="email" id="email-label">
                 Email:
             </label>
             <br>
-            
+
             <input type="email" name="email" class="text-input" id="email" placeholder="Enter your email" required>
             <br>
             <br>
-            <label for="number">
+            <label for="number" id="number-label">
                 Age(Optional):
             </label>
             <br>
-            <input type="number" name="age" id="number" class="text-input" placeholder="Enter your age">
+            <input type="number" name="age" min="10" max="99" id="number" class="text-input"
+                placeholder="Enter your age">
             <br>
             <br>
+            <label for="dropdown">
+                Which option best describes your current role?
+            </label>
+            <select name="description" id="dropdown">
+                <option value="" selected="selected" disabled>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time">Full time developer</option>
+                <option value="full-learner">Full time learner</option>
+                <option value="not-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+            <label for="radio">Would you recommend freecodecamp to a friend?</label>
+            <br>
+            <input type="radio" class="radio" name="answer" id="definitely" value="definitely">
+            <label class="radio" for="definitely">Definitely</label>
+            </label>
+            <br>
+            <input type="radio" class="radio" name="answer" id="no" value="no">
+            <label class="radio" for="no">No</label>
+            </label>
+            <br>
+            <input type="radio" class="radio" name="answer" id="yes" value="yes">
+            <label class="radio" for="yes">Yes</label>
+            </label>
+            <br>
+            <br>
+            <label for="dropdown-2">
+                What is your favourite feature of freecodecamp?
+            </label>
+            <select name="description" id="dropdown-2">
+                <option value="" selected="selected" disabled>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+            <br>
+            <br>
+            <label for="boxes">What would you like to see improved? (Check all that apply)</label>
+            <br>
+            <input type="checkbox" id="front-end" name="front-end" value="front-end">
+            <label for="vehicle1">Front End Projects</label><br>
+            <input type="checkbox" id="back-end" name="back-end" value="back-end">
+            <label for="vehicle2">Back End Projects</label><br>
+            <input type="checkbox" id="visualization" name="visualization" value="visualization">
+            <label for="vehicle3">Visualization</label><br>
+            <input type="checkbox" id="challenges" name="challenges" value="challenges">
+            <label for="vehicle1">Challenges</label><br>
+            <input type="checkbox" id="videos" name="videos" value="videos">
+            <label for="vehicle2">Videos</label><br>
+            <input type="checkbox" id="wiki" name="wiki" value="wiki">
+            <label for="vehicle3">Wiki</label><br><br>
+            <label for="comment">Any comments or suggestions?</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter comments here..."></textarea>
+            <br>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+
         </form>
     </div>
 
